@@ -9,9 +9,9 @@
 <ol>
 <li> Download or clone the repsoitory into your home directory. Make sure it is named fileSystemProject</li>
 <li> Then change directory
+
 ```
 cd fileSystemProject
-
 ```
 </li>
 
