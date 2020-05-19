@@ -1,4 +1,4 @@
-all: cd dd rd cut copy fileprop 
+all: cd dd rd cut copy fileprop rfc rmfile
 
 cd: createDirectory.cc
 	g++ createDirectory.cc -o cd
@@ -17,3 +17,9 @@ copy: copycmd.cc
 
 fileprop: fileprop.cc
 	g++ fileprop.cc -o fileprop
+
+rfc: regularFileCreate.cc
+	g++ regularFileCreate.cc -o rfc
+
+rmfile: removeFiles.cc
+	g++ removeFiles.cc -o rmfile
