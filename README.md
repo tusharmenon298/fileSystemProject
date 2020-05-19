@@ -18,7 +18,7 @@ cd fileSystemProject
 <li> Enter the following in your terminal
 
 ```
-    make && source fileSystemProject
+    make && source filecommands.sh
 ```
 <p>
 The make command compiles all the c++ programs of the project, making our work easier. Otherwise we would have to compile each individual file.
