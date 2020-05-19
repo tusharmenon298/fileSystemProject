@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//APIs used here opendir(),readdir(),closedir()
 int main(void)
 {
 

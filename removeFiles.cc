@@ -2,6 +2,7 @@
 #include <cstring>
 using namespace std;
 
+//APIs used here-remove()
 int main(int argc, char *argv[])
 {
     if(argc<2)

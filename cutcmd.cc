@@ -5,6 +5,7 @@
 #include<iostream>
 #include<fcntl.h>
 using namespace std;
+//APIs used here- open(),read(),write,close(),unlink()
 int main(int argc, char *argv[])
 {
     int d1,d2,n;

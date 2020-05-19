@@ -7,6 +7,7 @@
 
 using namespace std;
 
+//APIs used here- mkdir()
 int main(int argc, char* argv[])
 {
   //if no argument is given, then

@@ -8,6 +8,7 @@
 
 using namespace std;
 
+//APIs used here rmdir()
 int main(int argc, char* argv[])
 {
   //If no argument is given

@@ -4,6 +4,8 @@
 #include<stdio.h>
 #include<iostream>
 #include<fcntl.h>
+
+//APIs used here- open(),read(),write,close()
 using namespace std;
 int main(int argc, char *argv[])
 {

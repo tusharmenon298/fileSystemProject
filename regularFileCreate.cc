@@ -6,6 +6,8 @@
 #include<fcntl.h>
 #include <cstring>
 using namespace std;
+
+//APIs used here-open(),close()
 int main(int argc, char *argv[])
 {
     int d ,n;
