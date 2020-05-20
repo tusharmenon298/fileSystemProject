@@ -9,6 +9,8 @@
 #include<grp.h>
 #include<ctime>
 using namespace std;
+
+//APIs used stat
 int main(int argc, char *argv[])
 {
     struct stat s;

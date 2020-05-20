@@ -1,7 +1,7 @@
 #define _POSIX_SOURCE
 #define _POSIX_C_SOURCE 199309L
 #include<unistd.h>
-#include<stdio.h>
+#include<sys/stat.h>
 #include<iostream>
 #include<fcntl.h>
 
@@ -19,6 +19,17 @@ int main(int argc, char *argv[])
         cerr<<"Not enough argument"<<endl;
         return 1;
     }
+    struct stat s;
+    if(stat(argv[1],&s)==0)
+    {
+        mode_t fp=s.st_mode;
+        if(!S_ISREG(fp)){
+            cerr<<"Argument not a regular file. Action failed"<<endl;
+            return 1;
+        }
+    }
+    else
+        cerr<<"Unable to locate file"<<endl<<"Check if file exists or the path is right"<<endl;
     d1=open(argv[1],O_RDONLY);
     if(d1==-1)
     {
