@@ -59,13 +59,13 @@ function helpme {
 
     if [[ ${response,,} =~ "open" || ${response,,} =~ "editor" || ${response,,} =~ "directory" || ${response,,} =~ "folder" || ${response,,} =~ "view" || ${response,,} =~ "all" ]]
     then
-        echo "$ind- viewD       Moves a file.Can we used to delete by moving to trash. Arguments=2"
+        echo "$ind- viewD       Views the specified folder using a package manager or an editor. Depending on your choice. Arguments=1"
         let ind=$(expr $ind + 1)
     fi
 
     if [[ ${response,,} =~ "open" || ${response,,} =~ "editor" || ${response,,} =~ "regular" || ${response,,} =~ "file" || ${response,,} =~ "view" || ${response,,} =~ "all" ]]
     then
-        echo "$ind- viewF       Moves a file.Can we used to delete by moving to trash. Arguments=2"
+        echo "$ind- viewF       Views the specified file using an editor of your choice. Arguments=1"
         let ind=$(expr $ind + 1)
     fi
 
