@@ -23,3 +23,6 @@ rfc: regularFileCreate.cc
 
 rmfile: removeFiles.cc
 	g++ removeFiles.cc -o rmfile
+
+clean:
+	rm cd dd rd cut copy fileprop rfc rmfile
