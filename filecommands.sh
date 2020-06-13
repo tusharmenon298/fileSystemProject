@@ -23,7 +23,7 @@ function helpme {
 
     if [[ ${response,,} =~ "directory" || ${response,,} =~ "file" || ${response,,} =~ "info" || ${response,,} =~ "folder" || ${response,,} =~ "content" || ${response,,} =~ "list" || ${response,,} =~ "all" ]]
     then
-        echo "$ind- listAll     reads the current directory and lists all elements present except hidden files. Arguments=NULL"
+        echo "$ind- listAll     reads the directory and lists all elements present except hidden files. Arguments=1"
         let ind=$(expr $ind + 1)
     fi
 
@@ -154,7 +154,7 @@ function createD {
     ~/fileSystemProject/cd $@
     if [[ $# -eq 1 ]]
     then
-        echo "Do you want to open the folder you created in an editor?"
+        echo "Do you want to open the folder you created ?"
         read response
         if [[ ${response,,} =~ "y" ]]
         then
@@ -204,7 +204,7 @@ function removeF {
 
 #Lists everything in current directory
 function listAll {
-    ~/fileSystemProject/rd
+    ~/fileSystemProject/rd $@
 }
 
 

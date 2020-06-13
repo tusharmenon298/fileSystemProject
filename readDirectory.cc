@@ -6,12 +6,22 @@
 using namespace std;
 
 //APIs used here opendir(),readdir(),closedir()
-int main(void)
+int main(int argc, char *argv[])
 {
+    if(argc<2)
+    {
+        cerr<<"There are no argument"<<endl;
+        return 1;
+    }
+    if(argc>2)
+    {
+        cerr<<"too many arguments"<<endl;
+        return 1;
+    }
 
     struct dirent *de;
     //opens current directory
-    DIR *dr = opendir(".");
+    DIR *dr = opendir(argv[1]);
 
     if (dr == NULL)
     {
